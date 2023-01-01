@@ -1,0 +1,46 @@
+D:\SoftHSM2\bin>set SOFTHSM2_CONF=D:\SoftHSM2\etc\softhsm2.conf
+
+D:\SoftHSM2\bin>softhsm2-util.exe --init-token --slot 0 --label "kms"
+=== SO PIN (4-255 characters) ===
+Please enter SO PIN: soso
+Please reenter SO PIN: soso
+=== User PIN (4-255 characters) ===
+Please enter user PIN: user
+Please reenter user PIN: user
+The token has been initialized and is reassigned to slot 1113379265
+
+
+D:\SoftHSM2\bin>softhsm2-util --show-slots
+Available slots:
+Slot 1113379265
+    Slot info:
+        Description:      SoftHSM slot ID 0x425cd1c1
+        Manufacturer ID:  SoftHSM project
+        Hardware version: 2.5
+        Firmware version: 2.5
+        Token present:    yes
+    Token info:
+        Manufacturer ID:  SoftHSM project
+        Model:            SoftHSM v2
+        Hardware version: 2.5
+        Firmware version: 2.5
+        Serial number:    1b51eafc425cd1c1
+        Initialized:      yes
+        User PIN init.:   yes
+        Label:            kms
+Slot 1
+    Slot info:
+        Description:      SoftHSM slot ID 0x1
+        Manufacturer ID:  SoftHSM project
+        Hardware version: 2.5
+        Firmware version: 2.5
+        Token present:    yes
+    Token info:
+        Manufacturer ID:  SoftHSM project
+        Model:            SoftHSM v2
+        Hardware version: 2.5
+        Firmware version: 2.5
+        Serial number:
+        Initialized:      no
+        User PIN init.:   no
+        Label:
