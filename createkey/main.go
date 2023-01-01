@@ -86,12 +86,7 @@ func main() {
 		panic(fmt.Sprintf("GenerateKey() failed %s\n", err))
 	}
 
-	randGen, err := p.GenerateRandom(session, 32)
-	if err != nil {
-		panic(fmt.Sprintf("GenerateRandom() failed %s\n", err))
-	}
-
 	log.Printf("Created AES Key: %v", aesKey)
-	log.Printf("Created Random: %v", randGen)
+
 
 }
